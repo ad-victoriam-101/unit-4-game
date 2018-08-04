@@ -5,13 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RPGGAMEBOIS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
-    <div>
-        
-    </div>
+    <!-- Start of header -->
+    <div class="wrapper">
+            <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-4">A Role Playing Game</h1>
+                      <p class="lead">Select your hero below.</p>
+                    </div>
+            </div>
+    <!-- end of Jumbo tron Header -->
+    <div class="container">
+        <div class = "row">
+            <div class = "col-md-3">
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Rouge</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button id="button-hp" class="btn btn-success number" value="100"><h1>100</h1></button>
+                                <button id="button-speed" class="btn btn-primary number" value="15"><h1>15</h1></button>
+                                <button id="button-str" class="btn btn-danger number" value="3"><h1>3</h1></button>
+                                <br><br>
+                              <div class="row">
+                                  <div class="col center">
+                                        <button id="button-special" class="btn btn-primary number" value="1"><h1>Heal</h1></button>
+                                  </div>
+                              </div>
+                            </div>
+                    </div>
+            </div>
+            <div class = "col-md-3">
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Fighter</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button id="button-hp" class="btn btn-success number" value="100"><h1>125</h1></button>
+                                <button id="button-speed" class="btn btn-primary number" value="8"><h1>8</h1></button>
+                                <button id="button-str" class="btn btn-danger number" value="8"><h1>8</h1></button>
+                                <br><br>
+                              <div class="row">
+                                  <div class="col center">
+                                        <button id="button-special" class="btn btn-primary number" value="1"><h1>Heal</h1></button>
+                                  </div>
+                              </div>
+                            </div>
+                    </div>
+            </div>
+            <div class = "col-md-3">
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">WhiteMage</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button id="button-hp" class="btn btn-success number" value="75"><h1>75</h1></button>
+                                <button id="button-speed" class="btn btn-primary number" value="10"><h1>10</h1></button>
+                                <button id="button-str" class="btn btn-danger number" value="2"><h1>2</h1></button>
+                                <br><br>
+                              <div class="row">
+                                  <div class="col center">
+                                        <button id="button-special" class="btn btn-primary number" value="1"><h1>Heal</h1></button>
+                                  </div>
+                              </div>
+                            </div>
+                    </div>
+            </div>
+            <div class = "col-md-3">
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Tank</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button id="button-hp" class="btn btn-success number" value="150"><h1>175</h1></button>
+                                <button id="button-speed" class="btn btn-primary number" value="5"><h1>5</h1></button>
+                                <button id="button-str" class="btn btn-danger number" value="4"><h1>4</h1></button>
+                                <br><br>
+                              <div class="row">
+                                  <div class="col center">
+                                        <button id="button-special" class="btn btn-primary number" value="1"><h1>Heal</h1></button>
+                                  </div>
+                              </div>
+                            </div>
+                    </div>
+            </div>
     
 </body>
 </html>
