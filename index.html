@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
@@ -21,13 +21,21 @@
             </div>
     <!-- end of Jumbo tron Header -->
     <div class="container">
-            <div class=" row" id="heroClassDiv"></div>
+            <div class=" row">
+                    <div  class = "col-md-6 heroClassDiv">
+
+                    </div>
+                    <div class="col-md-6 enemyDiv">
+
+                    </div>
+            </div>
+
         <div class = "row">
             <div class = "col-md-3">
                     <div class="card hero" style="width: 18rem;" value = "Rouge">
                             <img class="card-img-top" src="http://via.placeholder.com/350x150" alt="Card image cap">
                             <div class="card-body">
-                              <h5 class="card-title hero">Rouge</h5>
+                              <h5 class="card-title">Rouge</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <button id="button-hp" class="btn btn-success number" value="100"><h1>100</h1></button>
                                 <button id="button-speed" class="btn btn-primary number" value="15"><h1>15</h1></button>
@@ -95,6 +103,11 @@
                             </div>
                     </div>
             </div>
-    
+        </div>
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-12 playingField"></div>
+                </div>
+        </div>
 </body>
 </html>
