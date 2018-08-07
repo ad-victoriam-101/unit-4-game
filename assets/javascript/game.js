@@ -1,9 +1,7 @@
 $(document).ready(function() {
     //Intro variables held pretty much forever.
-    var gameChosen = true;
     var heroPicked = false;
     var heroChosen = "";
-    var numberOfFiends = (Math.floor(Math.random()*2)+1)
     var rouge = {
         health: 100,
         speed: 15,
@@ -40,14 +38,15 @@ $(document).ready(function() {
     function initializeGame(){
         $(".hero").on('click' , function(){
             heroChosen = $(this).attr("value");
-            heroPicked = true;
             console.log(heroChosen)
             $(this).addClass("player").removeClass("hero")
             $(this).clone().appendTo("div.heroClassDiv")
             $(this).hide();
+            
             $(".hero").hide(500);
             var $btn = $("<button>",{id:"button","class":"attack btn"});
             $btn.text("Attack!");
+            
             $btn.click(function () {
                 var roll = $('#button-str').val()
                 var attack = Math.floor(Math.random()*10)+roll;
@@ -55,12 +54,26 @@ $(document).ready(function() {
             });
             $(".player").append($btn)
         });
+        heroPicked = true;
+    };
+    console.log(heroPicked)
+    if (heroPicked === true){
+        var generateEnemy = function(){
+            $(".player").clone().appendTo("enemyDiv")
+            console.log(generateEnemy)
+            };
+
+        $(".attack").on('click', function(){
+            if (enemyType.health === 0)
+            alert("Enemy Beaten")
+            else {
+                console.log(enemyType.health-attack)
+            }
+             
+        })
     }
-    // function generateEnemy(){
-    //     $(".card").clone().appendTo("div.enemyDiv")
-    // };
+generateEnemy();
 
 initializeGame();
-generateEnemy();
 
 })
